@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="assets/images/controller_logo.png" alt="Smart Home Controller logo" width="180">
-
   # Smart Home Controller
 
   **Control and monitor Bluetooth-enabled smart-home devices from one Flutter app.**
