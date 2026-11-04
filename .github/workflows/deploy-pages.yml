@@ -1,0 +1,54 @@
+name: Deploy project video page
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy-pages.yml"
+      - "site/**"
+      - "assets/images/controller_logo.png"
+      - "assets/video/Smart_Home_Controller_Motion_Graphics.mp4"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Prepare site files
+        run: |
+          mkdir -p _site/assets/images _site/assets/video
+          cp site/index.html _site/index.html
+          cp assets/images/controller_logo.png _site/assets/images/controller_logo.png
+          cp assets/video/Smart_Home_Controller_Motion_Graphics.mp4 _site/assets/video/Smart_Home_Controller_Motion_Graphics.mp4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

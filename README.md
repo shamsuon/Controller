@@ -8,16 +8,11 @@
   [![Flutter](https://img.shields.io/badge/Flutter-Dart-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
   [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](https://www.android.com/)
   [![Bluetooth](https://img.shields.io/badge/Connectivity-Bluetooth%20Classic-0082FC?logo=bluetooth&logoColor=white)](https://www.bluetooth.com/)
+
+  [▶ Watch the project video with playback controls](https://shamsuon.github.io/Controller/)
 </div>
 
 ---
-
-## Project video
-
-<video controls width="100%" preload="metadata">
-  <source src="https://raw.githubusercontent.com/shamsuon/Controller/main/assets/video/Smart_Home_Controller_Motion_Graphics.mp4" type="video/mp4">
-  Your browser does not support embedded videos.
-</video>
 
 ## About
 

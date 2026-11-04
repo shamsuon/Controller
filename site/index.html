@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <meta
+      name="description"
+      content="See Smart Home Controller in action: a Flutter app for Bluetooth-enabled smart-home devices."
+    >
+    <title>Smart Home Controller</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #07111f;
+        color: #f4f8ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 40px 20px;
+        background:
+          radial-gradient(ellipse at 50% 0, rgb(0 184 255 / 18%), transparent 48rem),
+          #07111f;
+      }
+
+      main {
+        width: min(100%, 960px);
+        text-align: center;
+      }
+
+      .logo {
+        display: block;
+        width: min(190px, 42vw);
+        height: auto;
+        margin: 0 auto 28px;
+        filter: drop-shadow(0 10px 36px rgb(0 184 255 / 18%));
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        letter-spacing: -0.04em;
+      }
+
+      .tagline {
+        margin: 12px 0 30px;
+        color: #a9bad0;
+        font-size: clamp(1rem, 2.4vw, 1.2rem);
+        line-height: 1.6;
+      }
+
+      .video-frame {
+        overflow: hidden;
+        border: 1px solid rgb(154 190 225 / 22%);
+        border-radius: 20px;
+        background: #000;
+        box-shadow: 0 24px 80px rgb(0 0 0 / 38%), 0 0 50px rgb(0 184 255 / 9%);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        max-height: min(72vh, 680px);
+        background: #000;
+      }
+
+      .repo-link {
+        display: inline-block;
+        margin-top: 24px;
+        color: #79d8ff;
+        text-decoration: none;
+      }
+
+      .repo-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="assets/images/controller_logo.png" alt="Smart Home Controller logo">
+      <div class="video-frame">
+        <video controls playsinline preload="metadata" aria-label="Smart Home Controller project video">
+          <source src="assets/video/Smart_Home_Controller_Motion_Graphics.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </div>
+      <h1>Smart Home Controller</h1>
+      <p class="tagline">Control and monitor Bluetooth-enabled smart-home devices from one Flutter app.</p>
+      <a class="repo-link" href="https://github.com/shamsuon/Controller">View the project on GitHub</a>
+    </main>
+  </body>
+</html>
