@@ -31,9 +31,6 @@ jobs:
           cp assets/images/controller_logo.png _site/assets/images/controller_logo.png
           cp assets/video/Smart_Home_Controller_Motion_Graphics.mp4 _site/assets/video/Smart_Home_Controller_Motion_Graphics.mp4
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
