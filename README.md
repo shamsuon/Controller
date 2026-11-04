@@ -14,11 +14,10 @@
 
 ## Project video
 
-Watch the app introduction:
-
-[▶️ Play Smart Home Controller — Motion Graphics](assets/video/Smart_Home_Controller_Motion_Graphics.mp4)
-
-> The video is included in this repository at `assets/video/Smart_Home_Controller_Motion_Graphics.mp4`.
+<video controls width="100%" preload="metadata">
+  <source src="https://raw.githubusercontent.com/shamsuon/Controller/main/assets/video/Smart_Home_Controller_Motion_Graphics.mp4" type="video/mp4">
+  Your browser does not support embedded videos.
+</video>
 
 ## About
 
