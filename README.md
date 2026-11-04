@@ -8,8 +8,14 @@
   [![Flutter](https://img.shields.io/badge/Flutter-Dart-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
   [![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](https://www.android.com/)
   [![Bluetooth](https://img.shields.io/badge/Connectivity-Bluetooth%20Classic-0082FC?logo=bluetooth&logoColor=white)](https://www.bluetooth.com/)
+</div>
 
-  [▶ Watch the project video with playback controls](https://shamsuon.github.io/Controller/)
+---
+
+[![Watch the Smart Home Controller project video](assets/images/project_video_preview.svg)](https://shamsuon.github.io/Controller/)
+
+<div align="center">
+  <a href="https://shamsuon.github.io/Controller/"><strong>▶ Open the video player</strong></a>
 </div>
 
 ---
